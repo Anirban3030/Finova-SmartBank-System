@@ -1,0 +1,16 @@
+SmartBank KYC Policy
+
+What KYC means
+KYC stands for Know Your Customer. It is the process banks use to verify a customer's identity.
+
+KYC in SmartBank
+SmartBank is a demonstration application. The current version does not collect identity documents and does not run real KYC verification.
+
+Information collected at registration
+At registration, SmartBank collects the customer's name, email address, phone number of 10 to 15 digits, and a password of 8 to 64 characters.
+
+Password protection
+Passwords are never stored in plain text. SmartBank stores only a securely hashed version of the password.
+
+Real banks
+A real bank would normally verify identity documents and address before allowing full account use. That verification is outside the scope of this demonstration.

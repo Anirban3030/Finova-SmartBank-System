@@ -1,0 +1,28 @@
+SmartBank Credit Card Policy
+
+Card types and credit limits
+SmartBank offers three card types: STANDARD, GOLD and PLATINUM. The credit limit is 50,000.00 for STANDARD, 150,000.00 for GOLD and 500,000.00 for PLATINUM.
+
+Credit limit
+The credit limit is the maximum total amount a customer is allowed to spend on the card.
+
+Available credit
+Available credit is the part of the credit limit that is still free to spend. Available credit equals the credit limit minus the outstanding amount.
+
+Outstanding amount
+The outstanding amount is the total the customer currently owes on the card.
+
+Difference between credit limit and available credit
+The credit limit is fixed and does not change when the customer spends. Available credit goes down with every purchase and goes up again when the customer makes a payment.
+
+Requesting a card
+A customer can request a card of any type. A customer can hold only one card of each type at a time.
+
+Card status
+A card is INACTIVE, ACTIVE, BLOCKED, EXPIRED or CLOSED. A new card starts as INACTIVE and must be activated before it can be used. Only an INACTIVE card can be activated.
+
+Blocking a card
+A customer can block an ACTIVE card. A blocked card cannot be used for purchases and cannot be reactivated in the app.
+
+Card validity
+A new card is valid for 5 years. An expired card cannot be used. Only the last 4 digits of a card number are shown.

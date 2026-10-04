@@ -1,0 +1,19 @@
+SmartBank Card Usage Policy
+
+Making a purchase
+A customer can make a purchase with a card by entering the merchant name (up to 100 characters) and the amount. The amount must be at least 0.01 and at most 1,000,000.00.
+
+Rules for a purchase
+The card must belong to the customer, must be ACTIVE and must not be expired. The purchase amount cannot be more than the available credit.
+
+Effect of a purchase
+A successful purchase reduces the available credit and increases the outstanding amount by the purchase amount. The purchase is saved in the card's transaction history.
+
+Rejected purchases
+A purchase is rejected if the card is INACTIVE, BLOCKED, expired, or if the available credit is too low.
+
+Card security
+Customers must never share their full card number, PIN, CVV or one-time codes with anyone. SmartBank staff and the SmartBank assistant will never ask for them.
+
+Card history
+Customers can view the card's purchase history and payment history at any time.

@@ -1,0 +1,13 @@
+SmartBank Fee Policy
+
+Current fees
+SmartBank is a demonstration application. In the current version, SmartBank does not charge an annual fee, a joining fee, a late payment fee or a transaction fee on credit cards or accounts.
+
+Interest
+The current version does not calculate or charge interest on the outstanding amount.
+
+No billing cycle
+The current version has no monthly statement date and no payment due date. The outstanding amount stays until the customer pays it.
+
+Real banks
+Real credit card issuers normally charge interest and fees such as late payment charges. Those charges are not part of this demonstration.

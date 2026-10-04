@@ -1,0 +1,19 @@
+SmartBank Transfer Policy
+
+How a transfer works
+A transfer moves money from one of the customer's own accounts to a destination account identified by its 12-digit account number.
+
+Rules for a transfer
+The source account must belong to the customer. Both the source and the destination account must be ACTIVE. The source account must have enough balance. The source and the destination must be different accounts.
+
+Amount limits
+A transfer amount must be at least 0.01 and at most 1,000,000.00, with no more than 2 decimal places.
+
+All or nothing
+A transfer is atomic. The debit from the source account and the credit to the destination account either both happen or neither happens. If any step fails, the whole transfer is cancelled and balances stay unchanged.
+
+Transaction records
+A successful transfer creates a TRANSFER_DEBIT record for the source account and a TRANSFER_CREDIT record for the destination account.
+
+Beneficiaries
+A customer can save beneficiaries with a name, an account number of 9 to 18 digits, and a bank name. Saving the same beneficiary account number twice is not allowed.

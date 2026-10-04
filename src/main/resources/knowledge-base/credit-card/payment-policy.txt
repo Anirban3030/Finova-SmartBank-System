@@ -1,0 +1,22 @@
+SmartBank Card Payment Policy
+
+Paying the card
+A customer pays their credit card bill by choosing one of their own bank accounts as the source of the payment.
+
+Rules for a card payment
+The payment amount must be at least 0.01 and at most 1,000,000.00. The payment cannot be more than the outstanding amount. The source account must belong to the customer, must be ACTIVE and must have enough balance.
+
+Effect of a payment
+A successful payment reduces the source account balance by the payment amount. It also reduces the card's outstanding amount and increases the card's available credit by the same amount.
+
+Partial payments
+A customer can pay any amount up to the outstanding amount. A partial payment is allowed.
+
+Overpayment
+Paying more than the outstanding amount is not allowed and is rejected.
+
+Payment records
+Every successful payment is saved in the card's payment history. The money taken from the bank account is also recorded as a CARD_PAYMENT transaction.
+
+All or nothing
+A card payment is atomic. If any step fails, nothing changes.

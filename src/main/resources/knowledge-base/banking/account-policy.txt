@@ -1,0 +1,25 @@
+SmartBank Account Policy
+
+Account types
+SmartBank offers two account types: Savings and Current.
+
+Automatic Savings account
+When a customer registers, SmartBank automatically creates one Savings account for them. The customer does not need to apply for it.
+
+Optional Current account
+A Current account is optional. A customer can open one later from the Accounts page.
+
+One account of each type
+A customer can hold at most one Savings account and at most one Current account. Opening a second account of the same type is not allowed.
+
+Account numbers
+Every account is given a unique 12-digit account number when it is created.
+
+Account status
+An account is always in one of three statuses: ACTIVE, BLOCKED or CLOSED. Deposits, withdrawals, transfers and card payments are only allowed on an ACTIVE account.
+
+Account ownership
+A customer can only see and operate their own accounts. Accessing another customer's account is not allowed.
+
+Balance
+The balance is the amount of money currently held in the account.

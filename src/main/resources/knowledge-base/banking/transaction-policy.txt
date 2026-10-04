@@ -1,0 +1,16 @@
+SmartBank Transaction Policy
+
+Deposits
+A customer can deposit money into their own ACTIVE account. The deposit amount must be at least 0.01 and at most 1,000,000.00 per transaction, with no more than 2 decimal places. A successful deposit increases the account balance.
+
+Withdrawals
+A customer can withdraw money from their own ACTIVE account. The amount must be at least 0.01 and at most 1,000,000.00 per transaction. A withdrawal is rejected if the account balance is lower than the requested amount.
+
+Transaction records
+Every deposit, withdrawal, transfer and card payment creates a transaction record. The transaction types are DEPOSIT, WITHDRAWAL, TRANSFER_DEBIT, TRANSFER_CREDIT and CARD_PAYMENT.
+
+Transaction history
+Customers can view their transaction history, filter it by date range and browse it page by page. A page can show at most 100 transactions. A date range is invalid if the start date is after the end date.
+
+Failed operations
+If an operation fails a rule, no money moves and no transaction record is created.
