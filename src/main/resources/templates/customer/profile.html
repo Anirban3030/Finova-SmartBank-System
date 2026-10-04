@@ -1,0 +1,9 @@
+<!doctype html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Profile · SmartBank</title><link rel="stylesheet" href="/css/app.css"></head>
+<body data-page="profile"><div th:replace="~{fragments/navbar :: navbar}"></div>
+<main class="page-shell narrow-page"><div class="page-header"><div><p class="eyebrow">Your details</p><h1>Profile</h1><p class="muted">The information linked to your SmartBank account.</p></div></div>
+    <section class="profile-card"><div class="profile-avatar">●</div><div class="profile-details"><div><span class="eyebrow">Full name</span><strong id="profile-name">Loading…</strong></div>
+        <div><span class="eyebrow">Email</span><strong id="profile-email">Loading…</strong></div><div><span class="eyebrow">Phone</span><strong id="profile-phone">Loading…</strong></div><div><span class="eyebrow">Role</span><strong id="profile-role">Loading…</strong></div></div></section>
+</main><div id="toast-host" class="toast-host"></div><script src="/js/common.js"></script></body></html>

@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Sign in · SmartBank</title><link rel="stylesheet" href="/css/app.css">
+</head>
+<body class="auth-page">
+<main class="auth-shell">
+    <section class="auth-intro"><a class="brand light" href="/login"><span class="brand-mark">S</span><span>SmartBank</span></a>
+        <div><p class="eyebrow">Banking, made clear</p><h1>Your money,<br><em>in good hands.</em></h1>
+            <p class="auth-copy">A calm, secure place to manage everyday banking, cards and transfers.</p></div>
+        <p class="muted light-text">Protected by JWT-secured APIs</p>
+    </section>
+    <section class="auth-card"><p class="eyebrow">Welcome back</p><h2>Sign in to your account</h2>
+        <p class="muted">Use the email and password you registered with.</p>
+        <form id="login-form" class="stack-form">
+            <label>Email<input name="email" type="email" autocomplete="email" placeholder="you@example.com" required></label>
+            <label>Password<input name="password" type="password" autocomplete="current-password" placeholder="Your password" required></label>
+            <button class="button full" type="submit">Sign in <span>→</span></button>
+        </form>
+        <p class="auth-switch">New to SmartBank? <a href="/register">Create an account</a></p>
+    </section>
+</main><div id="toast-host" class="toast-host"></div>
+<script src="/js/common.js"></script>
+</body></html>

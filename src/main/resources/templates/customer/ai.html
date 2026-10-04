@@ -1,0 +1,10 @@
+<!doctype html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Smart AI · SmartBank</title><link rel="stylesheet" href="/css/app.css"></head>
+<body data-page="ai"><div th:replace="~{fragments/navbar :: navbar}"></div>
+<main class="page-shell narrow-page"><div class="page-header"><div><p class="eyebrow">Your banking companion</p><h1>Ask Smart AI</h1><p class="muted">Get clear answers about SmartBank products, cards and everyday banking.</p></div></div>
+    <section class="ai-panel"><h2>What can I help with?</h2><p class="muted">Ask a question about transfers, account policies, card payments or fees.</p>
+        <form id="ai-form" class="ai-form"><textarea name="question" maxlength="1000" rows="4" placeholder="e.g. How do I pay my credit card from my savings account?" required></textarea><button class="button" type="submit">Ask Smart AI <span>→</span></button></form>
+        <div id="ai-answer" class="ai-answer" hidden></div></section>
+</main><div id="toast-host" class="toast-host"></div><script src="/js/common.js"></script></body></html>

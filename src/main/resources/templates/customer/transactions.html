@@ -1,0 +1,9 @@
+<!doctype html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Transactions · SmartBank</title><link rel="stylesheet" href="/css/app.css"></head>
+<body data-page="transactions"><div th:replace="~{fragments/navbar :: navbar}"></div>
+<main class="page-shell"><div class="page-header"><div><p class="eyebrow">Your money trail</p><h1>Transactions</h1><p id="transaction-count" class="muted">Loading…</p></div></div>
+    <form id="transaction-filters" class="filter-bar"><label>Account ID<input name="accountId" type="number" min="1" placeholder="Optional"></label><label>Type<select name="type"><option value="">All types</option><option>DEPOSIT</option><option>WITHDRAWAL</option><option>TRANSFER_DEBIT</option><option>TRANSFER_CREDIT</option><option>CARD_PAYMENT</option></select></label><label>From<input name="from" type="date"></label><label>To<input name="to" type="date"></label><button class="button" type="submit">Apply filters</button></form>
+    <div class="table-card"><table><thead><tr><th>Date</th><th>Type</th><th>Reference</th><th>Amount</th><th>Status</th></tr></thead><tbody id="transactions-list"><tr><td colspan="5" class="loading">Loading transactions…</td></tr></tbody></table></div>
+</main><div id="toast-host" class="toast-host"></div><script src="/js/common.js"></script></body></html>

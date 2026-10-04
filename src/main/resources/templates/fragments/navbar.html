@@ -1,0 +1,19 @@
+<nav class="navbar customer-mode" th:fragment="navbar">
+    <a class="brand" href="/customer/dashboard"><span class="brand-mark">S</span><span>SmartBank</span></a>
+    <div class="nav-links customer-only">
+        <a class="nav-link" href="/customer/dashboard">Overview</a>
+        <a class="nav-link" href="/customer/accounts">Accounts</a>
+        <a class="nav-link" href="/customer/transactions">Transactions</a>
+        <a class="nav-link" href="/customer/beneficiaries">Beneficiaries</a>
+        <a class="nav-link" href="/customer/cards">Cards</a>
+        <a class="nav-link" href="/customer/ai-assistant">Smart AI</a>
+    </div>
+    <div class="nav-links admin-only" hidden>
+        <a class="nav-link" href="/admin/dashboard">Admin overview</a>
+    </div>
+    <div class="nav-user">
+        <a class="profile-link customer-only" href="/customer/profile"><span class="avatar">●</span><span>Customer profile</span></a>
+        <a class="profile-link admin-only" href="/admin/dashboard" hidden><span class="avatar">●</span><span>Administrator profile</span></a>
+        <button class="logout-button logout" type="button">Logout</button>
+    </div>
+</nav>

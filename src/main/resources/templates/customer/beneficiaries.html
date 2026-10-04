@@ -1,0 +1,13 @@
+<!doctype html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Beneficiaries · SmartBank</title><link rel="stylesheet" href="/css/app.css"></head>
+<body data-page="beneficiaries"><div th:replace="~{fragments/navbar :: navbar}"></div>
+<main class="page-shell"><div class="page-header"><div><p class="eyebrow">Trusted recipients</p><h1>Beneficiaries</h1><p class="muted">Keep the people and accounts you transfer to close.</p></div></div>
+    <div class="two-column"><section class="panel"><p class="eyebrow">New beneficiary</p><h2>Add a recipient</h2><form id="beneficiary-form" class="stack-form">
+        <label>Name<input name="name" maxlength="100" placeholder="Recipient name" required></label>
+        <label>Account number<input name="accountNumber" inputmode="numeric" pattern="[0-9]{9,18}" placeholder="9–18 digits" required></label>
+        <label>Bank name<input name="bankName" maxlength="100" placeholder="Bank name" required></label>
+        <button class="button" type="submit">Add beneficiary</button></form></section>
+        <section><div id="beneficiaries-list" class="list-card"><div class="loading">Loading beneficiaries…</div></div></section></div>
+</main><div id="toast-host" class="toast-host"></div><script src="/js/common.js"></script></body></html>

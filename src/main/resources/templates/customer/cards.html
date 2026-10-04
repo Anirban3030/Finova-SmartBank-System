@@ -1,0 +1,9 @@
+<!doctype html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Cards · SmartBank</title><link rel="stylesheet" href="/css/app.css"></head>
+<body data-page="cards"><div th:replace="~{fragments/navbar :: navbar}"></div>
+<main class="page-shell"><div class="page-header"><div><p class="eyebrow">Spend with confidence</p><h1>Your cards</h1><p class="muted">Manage cards, purchases and payments.</p></div>
+    <form id="card-request-form" class="compact-form"><select name="cardType" required><option value="">Card type…</option><option value="STANDARD">Standard</option><option value="GOLD">Gold</option><option value="PLATINUM">Platinum</option></select><button class="button" type="submit">Request card</button></form></div>
+    <div id="cards-list" class="card-grid"><div class="loading">Loading cards…</div></div>
+</main><div id="toast-host" class="toast-host"></div><script src="/js/common.js"></script></body></html>

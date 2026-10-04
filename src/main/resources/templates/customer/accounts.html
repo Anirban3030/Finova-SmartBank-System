@@ -1,0 +1,9 @@
+<!doctype html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Accounts · SmartBank</title><link rel="stylesheet" href="/css/app.css"></head>
+<body data-page="accounts"><div th:replace="~{fragments/navbar :: navbar}"></div>
+<main class="page-shell"><div class="page-header"><div><p class="eyebrow">Money in one place</p><h1>Your accounts</h1><p class="muted">View balances, move money and open new accounts.</p></div>
+    <form id="open-account-form" class="compact-form"><select name="accountType" required><option value="">Account type…</option><option value="SAVINGS">Savings</option><option value="CURRENT">Current</option></select><button class="button" type="submit">Open account</button></form></div>
+    <div id="accounts-list" class="card-grid"><div class="loading">Loading accounts…</div></div>
+</main><div id="toast-host" class="toast-host"></div><script src="/js/common.js"></script></body></html>
